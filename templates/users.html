@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+<style >
+  body
+    {
+      background-image: url(static/photos/users.jpg);
+      background-size: cover;
+    
+    
+    }
+  .mydiv{
+
+  
+  color:;
+  text-align:center;
+  margin: 150px;
+  padding: 150px;
+
+} 
+
+</style>
+  
+</head>
+<body>
+  <div class="mydiv" style="margin-left:0px; padding-bottom: 50px; margin-bottom: 0px; padding-left:0px; padding-right: 500px; color: #157021; font-family: 'Rampart One', cursive; font-size: 20px;">
+    <h1 style="color:#fff; margin-left:10px;"><i>You have Successfully Registered ! </i><h1>
+    <h4 style="margin-top: -20px"><i style="color:#fff";>Thank you! We will be update you soon via email.</i></h4>
+  </div>
+    <center style="padding-right:600px;">
+       <table border = 1 style="border: 1px solid black;
+  border-collapse: collapse; padding:5px 5px;">
+          {% for key,value in result.items() %}
+              <tr>
+                <th style="padding: 15px 10px;"> {{key}} </th>
+                <th style="padding: 15px 10px;"> {{value}} </th>
+                
+              {% endfor %}      
+      <table>
+    </center>
+  
+
+</body>
+</html>
