@@ -30,6 +30,8 @@ def result():
 		phone = int(result['phone'])
 		college = result['college']
 		mycursor.execute("INSERT INTO participants(fullname, email, phone, college) VALUES (%s,%s,%s,%s)",(fullname, email, phone, college))
+		mydb.commit()
+		mycursor.close()
 		return render_template('users.html',result=result)
 	return render_template("index.html")
 
